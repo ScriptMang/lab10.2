@@ -1,6 +1,7 @@
 function PageItems({items, handleList}) {
     
     const itemList = items.map(prevItem => {
+             const id = string(prevCount => prevCount + 1);
             <li key={id}> prevItem</li>
     })
     return(
