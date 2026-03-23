@@ -1,12 +1,13 @@
-import PageItems from './components/PageItems'
+import PageItems from './components/PageItems.jsx'
 import {useState} from 'react'
 import './App.css'
 
 function App() {
-  const [items, setItems] = useState([]);
+  const [itemsList, setItems] = useState(["item1", "item2", "item3"]);
+
   return (
     <>
-    <PageItems items={items}/> 
+    <PageItems items={itemsList}/> 
     </>
   )
 }

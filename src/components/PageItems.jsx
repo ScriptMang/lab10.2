@@ -1,9 +1,12 @@
-function PageItems({items, handleList}) {
-    
+function PageItems({items}) {
+    let id = 0
     const itemList = items.map(prevItem => {
-             const id = string(prevCount => prevCount + 1);
-            <li key={id}> prevItem</li>
-    })
+           const newId =  String(id++);
+           return <li key={id}>{prevItem}</li>
+    });
+
+    //  console.log("Print the list of items before li tags: ", items);
+    // console.log("Print the list of items w/ li tags: ", itemList)
     return(
         <>
         <h3>Items per page: 
@@ -14,7 +17,7 @@ function PageItems({items, handleList}) {
                 <option value="20">20</option>
             </select>
         </h3>
-        {itemList}
+        <ul>{itemList}</ul>
         </>
     )
 }
