@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   const [itemsList, setItems] = useState(["item1", "item2", "item3"]);
-
+  
   return (
     <>
     <PageItems items={itemsList}/> 

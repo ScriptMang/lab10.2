@@ -1,8 +1,8 @@
 function PageItems({items}) {
-    let id = 0
+    let id = 0;
     const itemList = items.map(prevItem => {
            const newId =  String(id++);
-           return <li key={id}>{prevItem}</li>
+           return <li key={id}>{id}. {prevItem}</li>
     });
 
     //  console.log("Print the list of items before li tags: ", items);
@@ -17,7 +17,7 @@ function PageItems({items}) {
                 <option value="20">20</option>
             </select>
         </h3>
-        <ul>{itemList}</ul>
+        <ul id="currentItemList">{itemList}</ul>
         </>
     )
 }
