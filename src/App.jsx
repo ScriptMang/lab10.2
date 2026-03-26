@@ -11,10 +11,14 @@ function App() {
     }
     return tempList;
   });
+ 
+  const [itemsPerPage, setItemsPerPage] = useState(5);
+  
+
 
   return (
     <>
-    <CurrentPage items={itemsList} totalItems={itemsList.length}/> 
+    <CurrentPage items={itemsList} totalItems={itemsList.length} itemsPerPage={itemsPerPage}/> 
     </>
   )
 }

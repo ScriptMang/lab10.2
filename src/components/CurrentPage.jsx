@@ -1,10 +1,12 @@
-function CurrentPage({items, totalItems}) {
+function CurrentPage({items, totalItems, itemsPerPage}) {
     let id = 0;
     const itemList = items.map(prevItem => {
            const newId =  String(id++);
            return <li key={id}>{id}. {prevItem}</li>
     });
 
+    const numPages = Math.ceil(totalItems/itemsPerPage); 
+    console.log(`Total number of pages is ${numPages}`);
     //  console.log("Print the list of items before li tags: ", items);
     // console.log("Print the list of items w/ li tags: ", itemList)
     return(
