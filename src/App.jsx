@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <PageItems items={itemsList}/> 
+    <PageItems items={itemsList} totalItems={itemsList.length}/> 
     </>
   )
 }

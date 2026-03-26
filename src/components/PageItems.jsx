@@ -1,4 +1,4 @@
-function PageItems({items}) {
+function PageItems({items, totalItems}) {
     let id = 0;
     const itemList = items.map(prevItem => {
            const newId =  String(id++);
@@ -18,7 +18,7 @@ function PageItems({items}) {
                 <option value="20">20</option>
             </select>
         </h3>
-        <div><i>Total Items: {itemList.length}</i></div>
+        <div><i>Total Items: {totalItems}</i></div>
         <ul id="currentItemList">{itemList}</ul>
         </>
     )
