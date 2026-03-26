@@ -1,3 +1,14 @@
 #currentItemList{
     list-style-type: none;
 }
+
+#itemsSelectContainer {
+    display: flex;
+    align-items: center;
+}
+
+#topItemBar {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}
