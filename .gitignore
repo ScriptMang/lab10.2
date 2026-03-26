@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# todo file
+project.todo
+
+# example of custom use_pagination component
+examples
