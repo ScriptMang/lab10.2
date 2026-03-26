@@ -1,4 +1,4 @@
-import PageItems from './components/PageItems.jsx'
+import CurrentPage from './components/CurrentPage.jsx'
 import {useState} from 'react'
 import './App.css'
 
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <PageItems items={itemsList} totalItems={itemsList.length}/> 
+    <CurrentPage items={itemsList} totalItems={itemsList.length}/> 
     </>
   )
 }

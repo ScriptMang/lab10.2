@@ -1,4 +1,4 @@
-function PageItems({items, totalItems}) {
+function CurrentPage({items, totalItems}) {
     let id = 0;
     const itemList = items.map(prevItem => {
            const newId =  String(id++);
@@ -29,4 +29,4 @@ function PageItems({items, totalItems}) {
     )
 }
 
-export default PageItems
+export default CurrentPage
